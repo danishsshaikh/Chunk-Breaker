@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 931080606}
   - component: {fileID: 931080605}
   - component: {fileID: 931080604}
+  - component: {fileID: 931080607}
   m_Layer: 5
   m_Name: Twitter
   m_TagString: Untagged
@@ -189,7 +190,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 931080605}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 931080607}
+        m_MethodName: Twitter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &931080605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +237,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931080602}
   m_CullTransparentMesh: 0
+--- !u!114 &931080607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931080602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f858c3804cbefe4487fd3449e3309c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1192015054
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +712,7 @@ GameObject:
   - component: {fileID: 1581663570}
   - component: {fileID: 1581663569}
   - component: {fileID: 1581663568}
+  - component: {fileID: 1581663571}
   m_Layer: 5
   m_Name: LinkedIn
   m_TagString: Untagged
@@ -753,7 +778,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1581663569}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1581663571}
+        m_MethodName: LinkedIn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1581663569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -789,6 +825,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581663566}
   m_CullTransparentMesh: 0
+--- !u!114 &1581663571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581663566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f858c3804cbefe4487fd3449e3309c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1847328547
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,6 +849,7 @@ GameObject:
   - component: {fileID: 1847328551}
   - component: {fileID: 1847328550}
   - component: {fileID: 1847328549}
+  - component: {fileID: 1847328552}
   m_Layer: 5
   m_Name: Instagram
   m_TagString: Untagged
@@ -866,7 +915,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1847328550}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1847328552}
+        m_MethodName: IG
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1847328550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,6 +962,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847328547}
   m_CullTransparentMesh: 0
+--- !u!114 &1847328552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847328547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f858c3804cbefe4487fd3449e3309c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2025041355
 GameObject:
   m_ObjectHideFlags: 0
