@@ -7,7 +7,6 @@ public class SocialMedia : MonoBehaviour
     public void IG()
     {
         Application.OpenURL("https://www.instagram.com/melodykhaokhudjaanjao/");
-        Debug.Log("wtf bru");
     }
 
     public void Twitter()
