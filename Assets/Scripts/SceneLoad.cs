@@ -20,4 +20,9 @@ public class SceneLoad : MonoBehaviour
     {
         SceneManager.LoadScene("MEH");
     }
+
+    public void goBack()
+    {
+        SceneManager.LoadScene("Main Screen");
+    }
 }
