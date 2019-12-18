@@ -10,4 +10,14 @@ public class SceneLoad : MonoBehaviour
     {
         SceneManager.LoadScene("LevelScene");
     }
+
+    public void endGame()
+    {
+        Application.Quit();
+    }
+
+    public void aboutMe()
+    {
+        SceneManager.LoadScene("MEH");
+    }
 }
