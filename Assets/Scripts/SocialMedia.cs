@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class SocialMedia : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void IG()
     {
-        
+        Application.OpenURL("https://www.instagram.com/melodykhaokhudjaanjao/");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Twitter()
     {
-        
+        Application.OpenURL("https://twitter.com/danssnake");
+    }
+
+    public void LinkedIn()
+    {
+        Application.OpenURL("https://www.linkedin.com/in/danishsshaikh/");
     }
 }
