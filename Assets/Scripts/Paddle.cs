@@ -8,9 +8,11 @@ public class Paddle : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(Input.mousePosition.x / Screen.width * screenWidthInUnits);
+        //Debug.Log(Input.mousePosition.x / Screen.width * screenWidthInUnits);
 
-        Vector2 paddlePos = new Vector2(transform.position.x, 4f);
+        float mousePosInUnits = Input.mousePosition.x / Screen.width * screenWidthInUnits;
+
+        Vector2 paddlePos = new Vector2(mousePosInUnits, transform.position.y);
         transform.position = paddlePos;
     }
 }
