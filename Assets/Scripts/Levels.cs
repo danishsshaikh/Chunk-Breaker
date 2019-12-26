@@ -10,10 +10,10 @@ public class Levels : MonoBehaviour
         SceneManager.LoadScene("01-Level");
     }
 
-    //public void lvlTwo()
-    //{
-    //    SceneManager.LoadScene();
-    //}
+    public void lvlTwo()
+    {
+        SceneManager.LoadScene("02-Level");
+    }
 
     //public void lvlThree()
     //{
