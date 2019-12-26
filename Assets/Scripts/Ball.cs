@@ -9,6 +9,8 @@ public class Ball : MonoBehaviour
 
     Vector2 paddleToBallVector;
 
+    bool hasStarted = false;
+
     void Start()
     {
         paddleToBallVector = transform.position - paddle1.transform.position;      
@@ -16,13 +18,19 @@ public class Ball : MonoBehaviour
 
     void Update()
     {
-        LockBallToPaddle();
-        LaunchOnMouseClick();
+        if (!hasStarted)
+        {
+            LockBallToPaddle();
+            LaunchOnMouseClick();
+        }
     }
 
     private void LaunchOnMouseClick()
     {
-
+        if (Input.GetMouseButtonDown(0))
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(2f, 15f);
+        }
     }
 
     private void LockBallToPaddle()
