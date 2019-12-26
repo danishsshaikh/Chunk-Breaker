@@ -6,6 +6,8 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     [SerializeField] Paddle paddle1;
+    [SerializeField] float pushX = 2f;
+    [SerializeField] float pushY = 15f;
 
     Vector2 paddleToBallVector;
 
@@ -29,7 +31,8 @@ public class Ball : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(2f, 15f);
+            hasStarted = true;
+            GetComponent<Rigidbody2D>().velocity = new Vector2(pushX, pushY);
         }
     }
 
