@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoad : MonoBehaviour
 {
+    //[SerializeField] string gameScreen;
     public void playGame()
     {
         SceneManager.LoadScene("LevelScene");
@@ -25,4 +26,9 @@ public class SceneLoad : MonoBehaviour
     {
         SceneManager.LoadScene("Main Screen");
     }
+
+    //public void playAgain()
+    //{
+    //    SceneManager.LoadScene(gameScreen);
+    //}
 }
