@@ -5,48 +5,60 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+
+    
     [SerializeField] Paddle paddle1;
-    [SerializeField] float pushX = 2f;
-    [SerializeField] float pushY = 15f;
+    [SerializeField] float xPush = 2f;
+    [SerializeField] float yPush = 15f;
+    [SerializeField] AudioClip[] ballSounds;
 
-    Vector2 paddleToBallVector;
+    
+    Vector2 paddletoballvector;
+    bool HasStarted = false;
 
-    bool hasStarted = false;
+    
+    AudioSource myAudioSource;
 
+    
     void Start()
     {
-        paddleToBallVector = transform.position - paddle1.transform.position;      
+        paddletoballvector = transform.position - paddle1.transform.position;
+        myAudioSource = GetComponent<AudioSource>();
     }
 
+    // Update is called once per frame
     void Update()
     {
-        if (!hasStarted)
+        if (HasStarted == false)
         {
-            LockBallToPaddle();
-            LaunchOnMouseClick();
+            LockBallToPadlle();
+            LounchBallOnMouseClick();
         }
+
     }
 
-    private void LaunchOnMouseClick()
+    private void LounchBallOnMouseClick()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            hasStarted = true;
-            GetComponent<Rigidbody2D>().velocity = new Vector2(pushX, pushY);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(xPush, yPush);
+            HasStarted = true;
         }
+
     }
 
-    private void LockBallToPaddle()
+    private void LockBallToPadlle()
     {
-        Vector2 paddlePos = new Vector2(paddle1.transform.position.x, paddle1.transform.position.y);
-        transform.position = paddlePos + paddleToBallVector;
+        Vector2 paddlepos = new Vector2(paddle1.transform.position.x, paddle1.transform.position.y);
+        transform.position = paddlepos + paddletoballvector;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (hasStarted)
+        if (HasStarted)
         {
-            GetComponent<AudioSource>().Play();
+            AudioClip clip = ballSounds[UnityEngine.Random.Range(0, ballSounds.Length)];
+            myAudioSource.PlayOneShot(clip);
         }
     }
 }
