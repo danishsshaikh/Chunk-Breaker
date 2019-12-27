@@ -7792,7 +7792,8 @@ PrefabInstance:
       propertyPath: ballSounds.Array.data[4]
       value: 
       objectReference: {fileID: 8300000, guid: 9d27889cebc67164da3b63b80858bf7b, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1429715184, guid: 5b5381ac4db2d7f48aba2a97d9d66bc9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5b5381ac4db2d7f48aba2a97d9d66bc9, type: 3}
 --- !u!1001 &5330484369986160401
 PrefabInstance:
