@@ -1656,6 +1656,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlaySpace
       objectReference: {fileID: 0}
+    - target: {fileID: 5330484369021280661, guid: 4234f9283b2ca3848bd74a39378d2862,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5330484369021280660, guid: 4234f9283b2ca3848bd74a39378d2862,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1725,6 +1730,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5330484369491448227, guid: 4234f9283b2ca3848bd74a39378d2862,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5330484369503423031, guid: 4234f9283b2ca3848bd74a39378d2862,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5330484369602602917, guid: 4234f9283b2ca3848bd74a39378d2862,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5330484369702222163, guid: 4234f9283b2ca3848bd74a39378d2862,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4234f9283b2ca3848bd74a39378d2862, type: 3}
