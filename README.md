@@ -1,6 +1,22 @@
-# Chunk Breaker
+# :sparkler: Chunk Breaker :sparkler:
 
-## Game Screenshots
+Smash all blocks without letting ball drop, in order to progress to the next level
+ 
+## :video_game: Game Design
+
+**Player Experience:**
+
+- Quick Reactions
+
+**Core Mechanic:**
+
+- Breaking Blocks
+
+**Theme:**
+
+- Blocky & Colourful
+
+## :iphone: Game Screenshots
 
 - Main Menu
 ![Main Menu](https://github.com/danishsshaikh/Chunk-Breaker/blob/master/Assets/Game_ScreenShots/Mainmenu.PNG)
@@ -13,7 +29,7 @@
 
 
 
-## Tools and Resources used 
+## :link: Tools and Resources used 
 
 - [Fontspace](https://www.fontspace.com/)
 
