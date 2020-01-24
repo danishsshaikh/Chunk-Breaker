@@ -16,16 +16,6 @@ Smash all blocks without letting ball drop, in order to progress to the next lev
 
 - Blocky & Colourful
 
-## :iphone: Game Screenshots
-
-![Main Menu](https://github.com/danishsshaikh/Chunk-Breaker/blob/master/Assets/Game_ScreenShots/Mainmenu.PNG)
- 
-![Level Menu](https://github.com/danishsshaikh/Chunk-Breaker/blob/master/Assets/Game_ScreenShots/Levelmenu.PNG)
-
-![About Menu](https://github.com/danishsshaikh/Chunk-Breaker/blob/master/Assets/Game_ScreenShots/Aboutmenu.PNG)
-
-
-
 ## :link: Tools and Resources used 
 
 - [Fontspace](https://www.fontspace.com/)
