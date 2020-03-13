@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class SceneLoad : MonoBehaviour
 {
     //[SerializeField] string gameScreen;
+
     public void playGame()
     {
         SceneManager.LoadScene("LevelScene");
@@ -25,6 +26,12 @@ public class SceneLoad : MonoBehaviour
     public void goBack()
     {
         SceneManager.LoadScene("Main Screen");
+    }
+
+    public void LoadNextScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
     //public void playAgain()
