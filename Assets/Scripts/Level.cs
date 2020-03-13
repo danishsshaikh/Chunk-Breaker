@@ -6,7 +6,7 @@ public class Level : MonoBehaviour
 {
     [SerializeField] int breakableBlocks; //for debuggin
 
-    
+    SceneLoad sceneloader;
 
     public void CountBreakableBlocks()
     {
