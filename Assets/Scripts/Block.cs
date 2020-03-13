@@ -8,6 +8,7 @@ public class Block : MonoBehaviour
 
     [SerializeField] Level level;
 
+
     private void Start()
     {
         level = FindObjectOfType<Level>();
