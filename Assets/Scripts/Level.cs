@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class Level : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] int breakableBlocks; //for debuggin
 
-    // Update is called once per frame
-    void Update()
+    public void CountBreakableBlocks()
     {
-        
+        breakableBlocks++;
     }
 }
