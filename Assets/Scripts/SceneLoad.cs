@@ -11,6 +11,7 @@ public class SceneLoad : MonoBehaviour
     public void playGame()
     {
         SceneManager.LoadScene("LevelScene");
+        FindObjectOfType<GameStatus>().ResetGame();
     }
 
     public void endGame()
