@@ -119,6 +119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bff99be9eb76f44aa4c5fe200185919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  breakSound: {fileID: 0}
+  breakSound: {fileID: 8300000, guid: fd85a41079aa2b448adfe113c1ef3215, type: 3}
   level: {fileID: 0}
   blockSparklesVFX: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
