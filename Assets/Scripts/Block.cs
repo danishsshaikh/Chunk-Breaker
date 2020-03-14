@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,16 +11,59 @@ public class Block : MonoBehaviour
 
     [SerializeField] GameObject blockSparklesVFX;
 
+    //[SerializeField] int maxHits;
+
+    [SerializeField] int timesHit;
+
+    [SerializeField] Sprite[] hitSprites;
 
     private void Start()
     {
+        CountBreakableBlocks();
+    }
+
+    private void CountBreakableBlocks()
+    {
         level = FindObjectOfType<Level>();
-        level.CountBreakableBlocks();
+        if (tag == "Breakable")
+        {
+            level.CountBlocks();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        DestroyBlock();
+        if(tag == "Breakable")
+        {
+            HandleHit();
+        }
+    }
+
+    private void HandleHit()
+    {
+        timesHit++;
+        int maxHits = hitSprites.Length + 1;
+        if (timesHit >= maxHits)
+        {
+            DestroyBlock();
+        }
+        else
+        {
+            ShowNextHitSprite();
+        }
+    }
+
+    private void ShowNextHitSprite()
+    {
+        int spriteIndex = timesHit - 1;
+        if(hitSprites[spriteIndex] != null)
+        {
+            GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
+        }
+        else
+        {
+            Debug.LogError("Block Spite is Missing from Array" + gameObject.name);
+        }
     }
 
     private void DestroyBlock()
