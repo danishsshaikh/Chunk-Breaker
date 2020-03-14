@@ -39,10 +39,6 @@ public class Block : MonoBehaviour
     private void TriggerSparkleVFX()
     {
         GameObject sparkles = Instantiate(blockSparklesVFX, transform.position, transform.rotation);
-    }
-
-    private void DestroySparkleVFX()
-    {
-        WaitForSeconds(2f);
+        Destroy(sparkles, 1f);
     }
 }
