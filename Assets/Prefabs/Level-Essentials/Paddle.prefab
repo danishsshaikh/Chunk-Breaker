@@ -125,6 +125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ee084864c042c8428fe1362da6840b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenWidthInUnits: 16
+  screenWidthInUnits: 20.2
   max: 20.20263
   min: 1.17
