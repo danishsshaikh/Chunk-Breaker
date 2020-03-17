@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class SocialMedia : MonoBehaviour
 {
-    public void IG()
+    public void Github()
     {
-        Application.OpenURL("https://www.instagram.com/melodykhaokhudjaanjao/");
+        Application.OpenURL("https://github.com/danishsshaikh");
     }
-
-    public void Twitter()
+    public void Whatsapp()
     {
-        Application.OpenURL("https://twitter.com/danssnake");
+        Application.OpenURL("https://wa.me/986770229");
     }
 
     public void LinkedIn()
