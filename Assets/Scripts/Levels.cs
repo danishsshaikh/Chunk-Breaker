@@ -15,18 +15,18 @@ public class Levels : MonoBehaviour
         SceneManager.LoadScene("02-Level");
     }
 
-    //public void lvlThree()
-    //{
-    //    SceneManager.LoadScene();
-    //}
+    public void lvlThree()
+    {
+        SceneManager.LoadScene("03-Level");
+    }
 
-    //public void lvlFour()
-    //{
-    //    SceneManager.LoadScene();
-    //}
+    public void lvlFour()
+    {
+        SceneManager.LoadScene("04-Level");
+    }
 
-    //public void lvlFive()
-    //{
-    //    SceneManager.LoadScene();
-    //}
+    public void lvlFive()
+    {
+        SceneManager.LoadScene("05-Level");
+    }
 }
