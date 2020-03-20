@@ -35,6 +35,13 @@ public class Ball : MonoBehaviour
             LockBallToPadlle();
             LounchBallOnMouseClick();
         }
+        else
+        {
+            //made the speed of the game slower
+            //Speed of the ball is maintained
+            Time.timeScale = 0.73f;
+
+        }
 
     }
 
