@@ -10,7 +10,7 @@ public class SocialMedia : MonoBehaviour
     }
     public void Whatsapp()
     {
-        Application.OpenURL("https://wa.me/986770229");
+        Application.OpenURL("https://wa.me/91986770229");
     }
 
     public void LinkedIn()
